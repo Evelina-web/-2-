@@ -1,15 +1,208 @@
 @font-face {
 font-family: "HelveticaNeue";
-src: url(./fonts/HelveticaNeue-Roman.otf);
+src: url(/fonts/HelveticaNeue-Roman.otf);
+}
+
+@font-face {
+font-family: "HnL";
+src: url(/fonts/HelveticaNeue-Light.otf);
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-:root {
-  --font-family: "HelveticaNeue", sans-serif;
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: #333;
+background-color: #f0f0f0;
+line-height: 1.6;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+.header {
+background-color: #2d2d2d;
+padding: 0 40px;
+height: 50px;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.header-container {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 100%;
+}
+
+.xbox-logo {
+display: flex;
+color: #107C10;
+font-weight: bold;
+font-size: 18px;
+}
+
+.logo-text {
+color: #107C10;
+font-weight: 700;
+font-size: 16px;
+letter-spacing: 1px;
+}
+
+.nav-links {
+display: flex;
+gap: 47px;
+padding-left: 350px;
+}
+
+.nav-link {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+color: rgba(255, 255, 255, 0.5);
+transition: color 0.2s;
+}
+
+.nav-link:hover {
+color: #ffffff;
+}
+
+.header-right {
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.search-box input {
+background-color: #fff;
+border: none;
+padding: 6px 14px;
+border-radius: 2px;
+font-size: 13px;
+width: 209px;
+height: 38px;
+outline: none;
+}
+
+.my-xbox {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+color: rgba(255, 255, 255, 0.5);
+}
+
+.hero-banner {
+position: relative;
+width: 100%;
+max-width: 100%;
+overflow: hidden;
+}
+
+.hero-image {
+width: 100%;
+height: auto;
+display: block;
+min-height: 400px;
+object-fit: cover;
+}
+
+.hero-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+padding: 270px 400px;
+}
+
+.hero-content {
+text-align: left;
+color: #fff;
+}
+
+.hero-title {
+font-size: 28px;
+font-weight: 300;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+color: #fff;
+}
+
+.hero-release {
+font-size: 12px;
+margin-bottom: 200px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+color: #fff;
+}
+
+.hero-buttons {
+display: flex;
+gap: 10px;
+justify-content: flex-end;
+padding-right: 50px;
+}
+
+.btn {
+display: inline-block;
+padding: 8px 24px;
+font-size: 13px;
+font-weight: 500;
+border-radius: 2px;
+cursor: pointer;
+transition: opacity 0.2s;
+text-align: center;
+white-space: nowrap;
+}
+
+.btn:hover {
+opacity: 0.85;
+}
+
+.btn-green {
+background-color: #8dd83d;
+border: none;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 131%;
+color: #fff;
+border-radius: 4px;
+width: 136px;
+height: 38px;
+}
+
+.btn-green-outline {
+background-color: #8dd83d;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 131%;
+color: #fff;
+border: none;
+width: 148px;
+height: 38px;
+}
+
+.btn-dark {
+background-color: #4a4a4a;
+color: #fff;
+border: none;
 }
 
