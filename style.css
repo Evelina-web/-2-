@@ -775,16 +775,13 @@ margin-top: 208px;
     .footer {
         display: none;
     }
-
     .hero-banner {
         height: 200px;
     }
-
     .content-section {
         page-break-inside: avoid;
     }
 }
-
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
@@ -793,23 +790,19 @@ margin-top: 208px;
     }
 }
 
-
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #1a1a1a;
         color: #e0e0e0;
     }
-
     .page-title,
     .section-title,
     .specs-title {
         color: #e0e0e0;
     }
-
     .spec-text {
         color: #b0b0b0;
     }
-
     .spec-column {
         background-color: #2d2d2d;
     }
