@@ -147,5 +147,36 @@
       </div>
     </footer>
 
+    <script>
+
+      const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+      const navLinks = document.getElementById("navLinks");
+      const searchBox = document.querySelector(".search-box");
+      const myXbox = document.querySelector(".my-xbox");
+
+      mobileMenuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        mobileMenuToggle.classList.toggle("active");
+
+        if (window.innerWidth <= 768) {
+          searchBox.classList.toggle("mobile-hidden");
+          myXbox.classList.toggle("mobile-hidden");
+        }
+      });
+
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+          mobileMenuToggle.classList.remove("active");
+        });
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".header")) {
+          navLinks.classList.remove("active");
+          mobileMenuToggle.classList.remove("active");
+        }
+      });
+    </script>
   </body>
 </html>
