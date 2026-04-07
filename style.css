@@ -202,7 +202,36 @@ height: 38px;
 
 .btn-dark {
 background-color: #4a4a4a;
-color: #fff;
 border: none;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 117%;
+color: #fff;
 }
+
+.title-section {
+padding: 50px 20px 20px;
+text-align: center;
+margin-top: 100px;
+}
+
+.page-title {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+color: #435766;
+
+}
+
+.action-buttons {
+display: flex;
+justify-content: center;
+gap: 12px;
+padding: 10px 20px 40px;
+flex-wrap: wrap;
+margin-top: 208px;
+}
+
+
 
